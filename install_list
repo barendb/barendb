@@ -2,4 +2,4 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 brew install macvim --with-override-system-vim
 brew cask install insomnia
-brew install docker
+brew install docker docker-compose docker-machine
