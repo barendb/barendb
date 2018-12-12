@@ -23,7 +23,7 @@ alias gp="git push --follow-tags"
 alias gt="git tag"
 alias gpl="git pull"
 alias gclean="find . -type f -name '*.orig' -exec rm -r {} +"
-
+alias gbegone="git clean -f -d"
 function parse_git_branch {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/' -e "s/ //"
 }
@@ -45,3 +45,12 @@ alias platform.b="cd ~/workspace/capps-platform/backend"
 
 # AWS-VAULT
 alias av="aws-vault"
+
+
+# HELP
+alias halp='echo "halp_aws_accounts, halp_sqs"'
+alias halp_aws_accounts='echo "prod=389786459822 cat=176683658651"'
+alias halp_sqs='echo "av exec capps-cat-admin -- aws sqs send-message --queue-url=https://sqs.us-west-2.amazonaws.com/176683658651/the_queue --message-body \"{}\""'
+
+# DOCKER
+alias dockerdown="docker stop $(docker ps -a -q)"
