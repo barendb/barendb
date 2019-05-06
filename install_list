@@ -1,11 +1,12 @@
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+#sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+#install homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install macvim --with-override-system-vim
 brew cask install insomnia
-brew install docker docker-compose docker-machine xhyve docker-machine-driver-xhyve
+brew cask install aws-vault
+brew install python3 
 
-sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-docker-machine create default --driver xhyve --xhyve-experimental-nfs-share
-eval $(docker-machine env default)
-
+git config --global user.name "Barend Bootha"
+git config --global user.email barend.bootha@gmail.com
