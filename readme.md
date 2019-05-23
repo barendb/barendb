@@ -3,12 +3,12 @@
 ### .bashrc
 
 ```
-source '~/.barendb/bash_profile'
+source '/Users/barendb/.barendb/bash_profile'
 ```
 
 ### .gitcofig
 
 ```
 [include]
-    path = ~/.barendb/gifconfig
+    path = /Users/barendb/.barendb/gifconfig
 ```

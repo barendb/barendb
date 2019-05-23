@@ -45,6 +45,7 @@ alias platform.b="cd ~/workspace/capps-platform/backend"
 
 # AWS-VAULT
 alias av="aws-vault"
+alias ave="aws-vault exec"
 
 
 # HELP
