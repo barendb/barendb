@@ -4,8 +4,6 @@ export AWS_ACCOUNT="9999999999"
 export ENVIRONMENT="barend-local"
 export LOCAL_DYNAMO="true"
 export LOCAL_DYNAMO_HOST="$workspace/local_dynamodb"
-export RAYGUN_API_KEY="test"
-export MOBILE_API_URL_BASE="http://localhost:6970"
 
 # GIT COMMANDS/ALIASES
 alias g="git"
@@ -39,9 +37,7 @@ alias nrc="npm run compile"
 
 # OTHER ALIASES
 alias ws="cd ~/workspace"
-alias platform="cd ~/workspace/capps-platform"
-alias platform.f="cd ~/workspace/capps-platform/frontend"
-alias platform.b="cd ~/workspace/capps-platform/backend"
+alias platform="cd ~/workspace/platform"
 
 # AWS-VAULT
 alias av="aws-vault"
@@ -50,8 +46,8 @@ alias ave="aws-vault exec"
 
 # HELP
 alias halp='echo "halp_aws_accounts, halp_sqs"'
-alias halp_aws_accounts='echo "prod=389786459822 cat=176683658651"'
-alias halp_sqs='echo "av exec capps-cat-admin -- aws sqs send-message --queue-url=https://sqs.us-west-2.amazonaws.com/176683658651/the_queue --message-body \"{}\""'
+alias halp_aws_accounts='echo -e "test=944328028601 prod=9999 cat=9999"'
+alias halp_sqs='echo "av exec capps-cat-admin -- aws sqs send-message --queue-url=https://sqs.us-west-2.amazonaws.com/944328028601/thie_queue --message-body \"{}\""'
 
 # DOCKER
 alias dockerdown="docker stop $(docker ps -a -q)"
