@@ -3,7 +3,6 @@
 #install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew install macvim --with-override-system-vim
 brew cask install insomnia
 brew cask install aws-vault
 brew install python3
