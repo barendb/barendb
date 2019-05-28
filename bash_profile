@@ -51,3 +51,5 @@ alias halp_sqs='echo "av exec capps-cat-admin -- aws sqs send-message --queue-ur
 
 # DOCKER
 alias dockerdown="docker stop $(docker ps -a -q)"
+
+alias vi=vim
