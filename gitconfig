@@ -1,2 +1,26 @@
+[pretty]
+    changelog = format:* %h %s 
+    pretty-history = format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
+
 [alias]
     fixup = "!f() { TARGET=$(git rev-parse "$1"); git commit --fixup=$TARGET ${@:2} && EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"
+
+    st = status
+    ci = commit
+    co = checkout
+    co-staged = !git diff-index --cached --name-only --diff-filter=ACMR HEAD | xargs git co
+    di = diff
+    staged = diff --cache
+    di-staged = !git diff-index --cached --name-only --diff-filter=ACMR HEAD | xargs git di
+    dilc = diff --cached HEAD^
+    fa = fetch --all -v
+    ff = pull --ff-only
+    rv = remote -v
+    pt = push --tags origin master:master develop:develop 
+
+    cl = log --pretty=changelog --no-merges --cherry --abbrev-commit --date-order
+    ph = log --graph --pretty=pretty-history --abbrev-commit --date=relative
+    pdh = log --pretty=pretty-history --decorate --numstat
+    ours = "!f() { git co --ours $@ && git add $@; }; f"
+
+    theirs = "!f() { git co --theirs $@ && git add $@; }; f"
