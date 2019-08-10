@@ -12,3 +12,9 @@ source '/Users/barendb/.barendb/bash_profile'
 [include]
     path = /Users/barendb/.barendb/gifconfig
 ```
+
+### .vimrc
+
+```
+souce /Users/barendb/.barendb/config.vim
+```
