@@ -16,5 +16,5 @@ source '/Users/barendb/.barendb/bash_profile'
 ### .vimrc
 
 ```
-souce /Users/barendb/.barendb/config.vim
+source /Users/barendb/.barendb/config.vim
 ```
