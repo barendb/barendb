@@ -1,6 +1,6 @@
 #sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-#install homebrew
+# install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew cask install insomnia
@@ -14,3 +14,6 @@ brew install thefuck
 
 git config --global user.name "Barend Bootha"
 git config --global user.email barend.bootha@gmail.com
+
+# install rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
