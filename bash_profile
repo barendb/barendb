@@ -6,6 +6,7 @@ export LOCAL_DYNAMO="true"
 export LOCAL_DYNAMO_HOST="$workspace/local_dynamodb"
 
 # GIT COMMANDS/ALIASES
+alias gwip="git add . && gc -m 'wip' --no-verify"
 alias g="git"
 alias gc="git commit"
 alias gs="git status"

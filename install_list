@@ -11,9 +11,9 @@ brew install ack
 brew install vim
 brew install hub
 brew install thefuck
+brew install rustup
 
 git config --global user.name "Barend Bootha"
 git config --global user.email barend.bootha@gmail.com
 
-# install rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup-init
