@@ -3,6 +3,10 @@
 # install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+
+brew tap weaveworks/tap
+
+brew install weaveworks/tap/eksctl
 brew cask install insomnia
 brew cask install aws-vault
 brew install python3
