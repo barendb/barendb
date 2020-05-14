@@ -16,6 +16,7 @@ brew install vim
 brew install hub
 brew install thefuck
 brew install rustup
+brew install deno
 
 git config --global user.name "Barend Bootha"
 git config --global user.email barend.bootha@gmail.com
