@@ -44,6 +44,12 @@ alias platform="cd ~/workspace/platform"
 alias av="aws-vault"
 alias ave="aws-vault exec"
 
+# TF
+alias tfplan-master="aws-vault exec vr-master -- terraform plan -parallelism=100 -out plan.out"
+alias tfplan-prod="aws-vault exec vr-prod-role -- terraform plan -parallelism=100 -out plan.out"
+alias tfapply-master="aws-vault exec vr-master -- terraform apply plan.out"
+alias tfapply-prod="aws-vault exec vr-prod-role -- terraform apply plan.out"
+
 
 # HELP
 alias halp='echo "halp_aws_accounts, halp_sqs"'
