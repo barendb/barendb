@@ -17,6 +17,7 @@ brew install hub
 brew install thefuck
 brew install rustup
 brew install deno
+brew cask install dotnet-sdk
 
 git config --global user.name "Barend Bootha"
 git config --global user.email barend.bootha@gmail.com
