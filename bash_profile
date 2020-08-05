@@ -60,5 +60,8 @@ alias halp_sqs='echo "av exec capps-cat-admin -- aws sqs send-message --queue-ur
 alias dockerdown="docker stop $(docker ps -a -q)"
 
 alias vi=vim
+alias cat=bat
 
 eval $(thefuck --alias)
+
+alias dateme="node -e 'console.log(new Date())'"

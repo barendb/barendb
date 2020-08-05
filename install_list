@@ -17,6 +17,8 @@ brew install hub
 brew install thefuck
 brew install rustup
 brew install deno
+brew install bat
+brew install httpie
 brew cask install dotnet-sdk
 
 git config --global user.name "Barend Bootha"
