@@ -19,6 +19,7 @@ brew install rustup
 brew install deno
 brew install bat
 brew install httpie
+brew install ngrok
 brew cask install dotnet-sdk
 
 git config --global user.name "Barend Bootha"
