@@ -20,6 +20,11 @@ brew install deno
 brew install bat
 brew install httpie
 brew install ngrok
+brew install dust
+
+brew tap clementtsang/bottom
+brew install bottom
+
 brew cask install dotnet-sdk
 
 git config --global user.name "Barend Bootha"
