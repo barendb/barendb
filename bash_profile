@@ -64,4 +64,8 @@ alias cat=bat
 
 eval $(thefuck --alias)
 
-alias dateme="node -e 'console.log(new Date())'"
+alias dateme="deno eval 'console.log(new Date())'"
+alias epochme="deno eval 'let d = new Date(); console.log((d.getTime()-d.getMilliseconds())/1000)'"
+
+function epochconvert() { echo $1; EPOCH=$1 deno eval 'let t=process.env.EPOCH; let d = new Date(t*1000); console.log(d.toString());' }
+
