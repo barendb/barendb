@@ -47,7 +47,9 @@ alias ave="aws-vault exec"
 # TF
 alias tfplan-master="aws-vault exec vr-master -- terraform plan -parallelism=100 -out plan.out"
 alias tfplan-prod="aws-vault exec vr-prod-role -- terraform plan -parallelism=100 -out plan.out"
+alias tfplan-staging="aws-vault exec vr-staging-role -- terraform plan -parallelism=100 -out plan.out"
 alias tfapply-master="aws-vault exec vr-master -- terraform apply plan.out"
+alias tfapply-staging="aws-vault exec vr-staging-role -- terraform apply plan.out"
 alias tfapply-prod="aws-vault exec vr-prod-role -- terraform apply plan.out"
 
 
@@ -64,8 +66,13 @@ alias cat=bat
 
 eval $(thefuck --alias)
 
-alias dateme="deno eval 'console.log(new Date())'"
+alias dateme="deno eval 'console.log(new Date().toISOString())' | pbcopy && pbpaste && echo | echo anytime baby 💋"
 alias epochme="deno eval 'let d = new Date(); console.log((d.getTime()-d.getMilliseconds())/1000)'"
+alias guidme="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
+alias hashme="git rev-parse --short HEAD |  pbcopy && pbpaste && echo"
 
 function epochconvert() { echo $1; EPOCH=$1 deno eval 'let t=process.env.EPOCH; let d = new Date(t*1000); console.log(d.toString());' }
 
+export PATH="/Users/barendb/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

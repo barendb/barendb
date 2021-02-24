@@ -9,8 +9,7 @@ brew tap weaveworks/tap
 brew install weaveworks/tap/eksctl
 brew cask install insomnia
 brew cask install aws-vault
-brew install python3
-brew install terraform
+brew install python
 brew install ack
 brew install vim
 brew install hub
@@ -22,6 +21,7 @@ brew install httpie
 brew install ngrok
 brew install dust
 
+brew install warrensbox/tap/tfswitch
 brew tap clementtsang/bottom
 brew install bottom
 
