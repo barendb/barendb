@@ -20,6 +20,7 @@ brew install bat
 brew install httpie
 brew install ngrok
 brew install dust
+brew install ripgrep
 
 brew install warrensbox/tap/tfswitch
 brew tap clementtsang/bottom
@@ -31,3 +32,6 @@ git config --global user.name "Barend Bootha"
 git config --global user.email barend.bootha@gmail.com
 
 rustup-init
+
+# go version manager
+curl -sSL https://git.io/g-install | sh -s
